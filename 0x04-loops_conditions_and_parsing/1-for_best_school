@@ -3,4 +3,6 @@
 for i in {1..10}
 do
     echo "Best School"
+    # To silence SC2034, we acknowledge 'i' exists without needing it
+    : "$i"
 done
