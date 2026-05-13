@@ -1,6 +1,5 @@
 #!/usr/bin/env bash
 # A Bash script that displays a message and traps the SIGTERM signal
-# Using wait to ensure the trap is triggered immediately
 
 trap "echo 'I am invincible!!!'" SIGTERM
 
