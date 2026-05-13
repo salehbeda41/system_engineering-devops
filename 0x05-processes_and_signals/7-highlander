@@ -1,11 +1,12 @@
 #!/usr/bin/env bash
 # A Bash script that displays a message and traps the SIGTERM signal
+# Using wait to ensure the trap is triggered immediately
 
-# Trap SIGTERM (15) and execute the echo command
 trap "echo 'I am invincible!!!'" SIGTERM
 
 while true
 do
     echo "To infinity and beyond"
-    sleep 2
+    sleep 2 &
+    wait $!
 done
