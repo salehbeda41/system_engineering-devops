@@ -2,3 +2,4 @@
 # A Bash script that kills the 7-highlander process using SIGTERM
 
 kill "$(pgrep -f 7-highlander)"
+echo "OK"
